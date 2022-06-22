@@ -1,0 +1,37 @@
+% main.tex
+\newpage
+\setcounter{page}{1}
+\fancypage{%
+\setlength{\fboxsep}{8pt}%
+\setlength{\fboxrule}{0.8pt}%
+\setlength{\shadowsize}{0pt}%
+\shadowbox}{}
+\setcounter{page}{1}
+
+\begin{table}
+\vspace{-3mm}
+\arrayrulewidth=0.8pt
+\hspace{-4mm}
+\begin{tabular}{C{33mm}C{117mm}}
+\hline
+\parbox[c][15mm][c]{0pt}{}{\song\xiaosi\bf 研究题目} \hspace{2mm} \vline &   {\xiaosi\kai\researchtopic} 博士论文选题题目 \\
+	\hline
+\end{tabular}
+\end{table}
+
+\noindent{\xiaosi\song\bf 一、研究内容简介（300～500字）}
+\input{part1}
+
+\newpage
+\noindent{\xiaosi\song\bf 二、研究工作进展（包括已经完成的主要工作内容以及已经取得的成绩。本部分为主体部分，请详细叙述。）}
+\input{part2}
+
+\newpage
+\noindent{\xiaosi\song\bf 三、下一步的工作计划}
+\input{part3}
+
+\newpage
+\noindent{\xiaosi\song\bf 四、导师评语}\\
+\input{part4}
+\vfill
+\hskip 4cm  {\xiaosi\song\bf 签名：\hskip 4cm 日期：\qquad 年 \quad 月 \quad 日}

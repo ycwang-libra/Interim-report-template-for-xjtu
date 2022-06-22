@@ -1,0 +1,117 @@
+\documentclass[11pt,a4paper]{article}%
+\usepackage{amsmath,amsbsy,amssymb,amsfonts}
+\usepackage{bm}
+\usepackage{mathrsfs}
+%\usepackage[colorlinks,unicode, bookmarksnumbered=true]{hyperref}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{listings}
+\usepackage{indentfirst}
+\usepackage[amsmath,thmmarks,thref]{ntheorem}
+\usepackage{stmaryrd}
+\usepackage{url}
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{fancyhdr}
+\usepackage{fancybox}
+\usepackage{titlesec}
+\usepackage{multirow}
+\usepackage{booktabs}	
+\usepackage{enumerate}
+\usepackage{cases}
+\usepackage{pstricks-add}
+\usepackage{float}
+\usepackage{subfigure}   %多图加小标题
+\usepackage{hyperref}  % 引用超链接
+\usepackage{booktabs} % 表格线
+\usepackage{multirow}  % 表格内部合并
+\usepackage{ulem} %划掉字符
+\usepackage{caption}
+
+\usepackage{threeparttable}
+
+
+\input{content/setting}
+% please place your own definitions here and don't use \def but
+% \newcommand{}{}
+
+\def
+\theequation{\thesection.\arabic{equation}}
+\numberwithin{equation}{section}
+\newcommand*{\abs}[1]{\lvert#1\rvert}
+\newcommand*{\Abs}[1]{\big\lvert#1\big\rvert}
+\newcommand*{\ABS}[1]{\Big\lvert#1\Big\rvert}
+%\newcommand*{\norm}[1]{\left\lVert #1 \right\rVert}
+\newcommand*{\norm}[1]{\lVert #1 \rVert}
+\newcommand*{\Norm}[1]{\big\lVert #1 \big\rVert}
+\newcommand*{\NOrm}[1]{\Big\lVert #1 \Big\rVert}
+\newcommand*{\NORM}[1]{\left\lVert #1 \right\rVert}
+\newcommand*{\tnorm}[1]{\interleave#1\interleave}
+\newcommand*{\jump}[1]{\llbracket #1\rrbracket}
+%\newcommand*{\jump}[1]{\lBrack #1\rBrack}
+\newcommand*{\Jump}[1]{\left\llbracket #1\right\rrbracket}
+\newcommand*{\JUMP}[1]{\Big\llBracket #1 \Big\rrBracket}
+\def\sech{\mathrm{sech}}
+\def\mathi{\mathrm{i}}
+%\newcommand\mathd{\mathrm{d}}
+\newcommand\mathd{d}
+\newcommand\bsm{\boldsymbol}
+%\def\mathds{\mathrm{~d}}
+%\def\mathdx{\mathrm{~d\bf{x}}}
+\def\mathds{\,ds}
+\def\mathdx{\,d{\bm x}}
+
+\usepackage{CJKutf8,CJKnumb}%,CJKulem}
+\AtBeginDocument{\begin{CJK}{UTF8}{song}}
+	\AtEndDocument{\clearpage \end{CJK}}
+
+\setlength{\parindent}{2em}
+\linespread{1.3}
+
+\begin{document}
+	
+\renewcommand\figurename{图}
+\renewcommand\tablename{表}
+\renewcommand\refname{参考文献}
+
+\newtheorem{scheme}{格式}
+\newtheorem{theorem}{定理}[section]
+\newtheorem{lemma}{引理}[section]
+\newtheorem{corollary}[theorem]{推论}
+\newtheorem{definition}{定义}[section]
+\newtheorem{algorithm}{算法}
+\newtheorem{assumption}{假设}[section]
+\newtheorem{remark}{注}[section]
+%\newdefinition{remark}{Remark}[section]
+\newtheorem{example}{例}[section]
+\newenvironment{proof}[1][证明]{\noindent\textbf{#1. }}{\hfill $\Box$}
+	
+	
+	
+\renewcommand{\institution}{学院名称} % 数学与统计学院
+\renewcommand{\numberID}{}
+\renewcommand{\cardID}{1234567890}
+\renewcommand{\namestudent}{张三}
+\renewcommand{\namesupervisor}{李四~教授}
+\renewcommand{\thestitlelineone}{博士论文选题名称}
+\renewcommand{\thestitlelinetwo}{选题名称第二行} % 如果只有一行，可在content/cover中 注释掉 \thestitlelinetwo
+\renewcommand{\discipline}{专业}
+\renewcommand{\myyear}{2022}
+\renewcommand{\mymonth}{6}
+\renewcommand{\myday}{6}
+
+\renewcommand{\em}{\it} % 期刊名去掉下划线
+
+\input{content/cover}
+\input{content/main}
+
+%\bibliographystyle{unsrt}
+\bibliographystyle{abbrv}
+%\bibliographystyle{IEEEtran}
+%\bibliographystyle{model1-num-names}
+%\bibliography{Multi_bibfile,Phase_Field_bibfile_PFC,Phase_Field_bibfile}
+%\bibliography{articles}
+
+\end{document}

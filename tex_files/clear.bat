@@ -1,0 +1,16 @@
+del *.log
+del *.ps
+del *.lst
+del *.aux
+del *.bak
+del *.dvi
+del *.djs
+del *.out
+del *.nav
+del *.snm
+del *.toc
+del ctextemp_*
+del *.bbl
+del *.blg
+del *.synctex.gz
+del *.synctex.gz(busy)
