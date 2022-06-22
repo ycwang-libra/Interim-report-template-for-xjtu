@@ -1,6 +1,3 @@
-# Interim-report-template-for-xjtu
-This is the template of interim report for Xi'an Jiaotong University.
-
 # 西安交通大学博士中期报告模板
 瞅瞅你们的deadline，还在用word敲公式、插表格、加参考文献、排版改格式吗？
 快让LaTex来拯救各位！（虽然用LaTex开始麻烦点，但是比起后期word浪费的大量时间，这一个小时还是超值的！）
@@ -47,14 +44,14 @@ This is the template of interim report for Xi'an Jiaotong University.
 #### 注意！
 首次编译花费时间可能较长，因为MikTex初次安装字体较少，需要在线下载安装很多所需的字体包（1.1中已经选择了自动安装），所以需要确保有良好的网络质量。安装好字体以后，后期编译会比较快。
 
-不出意外的话，编译生成的pdf会自动弹出。就接着可以愉快地:dog:写报告啦！
+不出意外的话，编译生成的pdf会自动弹出。接着就可以愉快地:dog:写报告啦！
 
 ### 2.1 封面
 用WinEdt打开interim_report.tex编辑封面内容，封面格式在content/cover.tex中设置。
 
 ### 2.2 正文
 正文部分分别在content/main.tex、part1~4.tex中添加。
-参考文献bib在articles.bib中添加。
+参考文献的bib文件在articles.bib中添加。
 
 #### 注意！
 以后bib中添加了参考文献首先用bibtex编译后再用PDFTeXify编译，而且每次需要在主文件interim_report.tex下进行。双击clear.bat可以删除编译产生的过程文件。一句话，习惯用ctrl+shift+b、ctrl+shift+p快捷键编译就万事大吉！
