@@ -46,15 +46,15 @@
 
 不出意外的话，编译生成的pdf会自动弹出。接着就可以愉快地:dog:写报告啦！
 
-### 2.1 封面
+### 2.2 封面
 用WinEdt打开interim_report.tex编辑封面内容，封面格式在content/cover.tex中设置。
 
-### 2.2 正文
+### 2.3 正文
 正文部分分别在content/main.tex、part1~4.tex中添加。
 参考文献的bib文件在articles.bib中添加。
 
 #### 注意！
 以后bib中添加了参考文献首先用bibtex编译后再用PDFTeXify编译，而且每次需要在主文件interim_report.tex下进行。双击clear.bat可以删除编译产生的过程文件。一句话，习惯用ctrl+shift+b、ctrl+shift+p快捷键编译就万事大吉！
 
-# 最后
+# 3. 最后
 预祝各位中期考核顺利！博士毕业顺利！
